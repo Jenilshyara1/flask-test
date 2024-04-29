@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Dia</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+
+
+        <div class="header_bottom">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand nav-logo-text" href="index.html">
+                SugarSmart Insights
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> </span>
+              </button>
+  
+              <div class="collapse navbar-collapse bg-nav-right" id="navbarSupportedContent">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('information') }}">Information Hub</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('sugar') }}">Sugar Metrics </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('prediction') }}">Prediction</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="dropdown ml-auto dropleft">
+                  <button class="btn border border-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="{{ url_for('riskfactor') }}">Risk Factor Encyclopedia</a>
+                    <a class="dropdown-item" href="{{ url_for('sugarlink') }}">Sugar Link</a>
+                    <a class="dropdown-item" href="{{ url_for('reference') }}"> Reference</a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+</div>
+
+<section class="reference_main_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="text-center my-5">References</h2>
+               <div class="lead">
+                <p>Khan, M. A., Hashim, M., King, J., Govender, R. D., Mustafa, H., & Kaabi, J. A. (2019). Epidemiology of Type 2 Diabetes – Global burden of disease and Forecasted Trends. Journal of Epidemiology and Global Health, 10(1), 107. https://doi.org/10.2991/jegh.k.191028.001</p>
+                <p>Ciarambino, T.; Crispino, P.; Leto, G.; Mastrolorenzo, E.; Para, O.; Giordano, M. Influence of Gender in Diabetes Mellitus and Its Complication. Int. J. Mol. Sci. 2022, 23, 8850. https://doi.org/10.3390/ijms23168850</p>
+                <p>Sastre, M.T.M., Sorum, P.C., Kpanake, L. et al. Judging the possibility of the onset of diabetes mellitus type 2 from reported behavioral changes and from family history. Clin Diabetes Endocrinol 9, 1 (2023). https://doi.org/10.1186/s40842-022-00147-w</p>
+                <p>PIMA Indians Diabetes Database. (2016, October 6). Kaggle. https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database</p>
+                <p>Aishwarya Mujumdar, V Vaidehi, Diabetes Prediction using Machine Learning Algorithms, Procedia Computer Science, Volume 165, 2019, Pages 292-299, ISSN 1877-0509, https://doi.org/10.1016/j.procs.2020.01.047.   (https://www.sciencedirect.com/science/article/pii/S1877050920300557)</p>
+                <p>Harsha Suresh, Meena Mikhael, Vincent Ho & Jerry Zhou. (2022) A HPLC-ESI-Q-ToF-MS Method for the Analysis of Monomer Constituents in PHGG, Gum Arabic And Psyllium Husk Prebiotic Dietary Fibre Supplements. International Journal of Food Properties 25:1, pages 1650-1667.</p>
+                <p>Li T, Quan H, Zhang H, Lin L, Lin L, Ou Q, Chen K. Type 2 diabetes is more predictable in women than men by multiple anthropometric and biochemical measures. Sci Rep. 2021 Mar 15;11(1):6062. doi: 10.1038/s41598-021-85581-z. PMID: 33723361; PMCID: PMC7960723.</p>
+                <p>Rani, K. J. (2020). Diabetes prediction using machine learning. International Journal of Scientific Research in Computer Science, Engineering and Information Technology, 294–305. https://doi.org/10.32628/cseit206463</p>
+                <p>Mujumdar, A., & Vaidehi, V. (2019). Diabetes Prediction using Machine Learning Algorithms. Procedia Computer Science, 165, 292–299.https://doi.org/10.1016/j.procs.2020.01.047 </p>
+                <p>Ahmetcankaraolan. (2020, July 18). Diabetes Prediction using Machine Learning. Kaggle. https://www.kaggle.com/code/ahmetcankaraolan/diabetes-prediction-using-machine-learning</p>
+                <p>PerkinElmer, Inc. (2015, July 20). Analysis of Sugars in Honey Using the PerkinElmer Altus HPLC System with RI Detection [Slide show]. SlideShare. https://www.slideshare.net/perkinelmerinc/analysis-of-sugars-in-honey-using-the-perkinelmer-altus-hplc-system-with-ri-detection</p>
+                <p>Xu, W., Liu, L., & Zhu, M. (2014). Determination of sugars in molasses by HPLC following Solid-Phase extraction. International Journal of Food Properties, 18(3), 547–557. https://doi.org/10.1080/10942912.2013.837064</p>
+                <p>Shuib, N. M. (2019). Sugar Analysis OPF slideshow. Ukm-my. https://www.academia.edu/41149634/Sugar_Analysis_OPF_slideshow</p>
+                <p>Yan, Z., Cai, M., Han, X., Chen, Q., & Lu, H. (2023). The Interaction Between Age and Risk Factors for Diabetes and Prediabetes: A Community-Based Cross-Sectional Study. Diabetes, metabolic syndrome and obesity : targets and therapy, 16, 85–93. https://doi.org/10.2147/DMSO.S390857</p>
+                <p>Balkau, B., Lange, C., Fezeu, L., Tichet, J., de Lauzon-Guillain, B., Czernichow, S., Fumeron, F., Froguel, P., Vaxillaire, M., Cauchi, S., Ducimetière, P., & Eschwège, E. (2008). Predicting diabetes: clinical, biological, and genetic approaches: data from the Epidemiological Study on the Insulin Resistance Syndrome (DESIR). Diabetes care, 31(10), 2056–2061. https://doi.org/10.2337/dc08-0368</p>
+                <p>Wang, M., Yu, M., Fang, L., & Hu, R. Y. (2015). Association between sugar-sweetened beverages and type 2 diabetes: A meta-analysis. Journal of diabetes investigation, 6(3), 360–366. https://doi.org/10.1111/jdi.12309</p>
+                <p>Liu, Y., Cheng, J., Wan, L., & Chen, W. (2023). Associations between Total and Added Sugar Intake and Diabetes among Chinese Adults: The Role of Body Mass Index. Nutrients, 15(14), 3274. https://doi.org/10.3390/nu15143274</p>
+                <p>Turney, S. (2024, February 10). Pearson Correlation Coefficient (r) | Guide & Examples. Scribbr. https://www.scribbr.com/statistics/pearson-correlation-coefficient/</p>
+                <p>GeeksforGeeks. (2023, April 6). How to convert categorical string data into numeric in Python? GeeksforGeeks. https://www.geeksforgeeks.org/how-to-convert-categorical-string-data-into-numeric-in-python/</p>
+                <p>One-way ANOVA - An introduction to when you should run this test and the test hypothesis | Laerd Statistics. (n.d.). https://statistics.laerd.com/statistical-guides/one-way-anova-statistical-guide.php</p>
+                <p>Bahour, N., Cortez, B., Pan, H. et al. Diabetes mellitus correlates with increased biological age as indicated by clinical biomarkers. GeroScience 44, 415–427 (2022). https://doi.org/10.1007/s11357-021-00469-0</p>
+                <p>M. Sue Kirkman, Vanessa Jones Briscoe, Nathaniel Clark, Hermes Florez, Linda B. Haas, Jeffrey B. Halter, Elbert S. Huang, Mary T. Korytkowski, Medha N. Munshi, Peggy Soule Odegard, Richard E. Pratley, Carrie S. Swift; Diabetes in Older Adults. Diabetes Care 1 December 2012; 35 (12): 2650–2664. https://doi.org/10.2337/dc12-1801</p>
+                <p>Suastika, Ketut & Dwipayana, I Made & Made, Siswadi & Semadi, R & Kuswardhani, Tuty. (2012). Age is an Important Risk Factor for Type 2 Diabetes Mellitus and Cardiovascular Diseases. 10.5772/52397. </p>
+                <p>Kautzky-Willer A, Leutner M, Harreiter J. Sex differences in type 2 diabetes. Diabetologia. 2023 Jun;66(6):986-1002. doi: 10.1007/s00125-023-05891-x. Epub 2023 Mar 10. Erratum in: Diabetologia. 2023 Apr 12;: PMID: 36897358; PMCID: PMC10163139.</p>
+                <p>Meissner, M. (2021, March 2). How diabetes affects men vs. women. https://www.medicalnewstoday.com/articles/diabetes-affects-men-women#treatment</p>
+                <p>Gray, N., Picone, G., Sloan, F., & Yashkin, A. (2015). Relation between BMI and diabetes mellitus and its complications among US older adults. Southern medical journal, 108(1), 29–36. https://doi.org/10.14423/SMJ.0000000000000214</p>
+                <p>Bays, H. E., Chapman, R. H., Grandy, S., & SHIELD Investigators' Group (2007). The relationship of body mass index to diabetes mellitus, hypertension and dyslipidemia: comparison of data from two national surveys. International journal of clinical practice, 61(5), 737–747. https://doi.org/10.1111/j.1742-1241.2007.01336.x</p>
+                <p>Gupta S, Bansal S (2021) Correction: Does a rise in BMI cause an increased risk of diabetes?: Evidence from India. PLOS ONE 16(2): e0247537. https://doi.org/10.1371/journal.pone.0247537</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="info_section ">
+    <div class="container">
+      
+     
+      <div class="info_bottom layout_padding2">
+        <div class="row info_main_row">
+          <div class="col-md-6 col-lg-3">
+            <h5>
+              Address
+            </h5>
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 9313784548
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+                <span>
+                  adity@gmail.com
+                </span>
+              </a>
+            </div>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_links">
+              <h5>
+                Useful link
+              </h5>
+              <div class="info_links_menu">
+                <a class="active" href="{{ url_for('index') }}">
+                  Home
+                </a>
+                <a href="information.html">
+                  Information Hub
+                </a>
+                <a href="sugarmetrics.html">
+                  Sugar Metrics 
+                </a>
+                <a href="prediction.html">
+                  Prediction
+                </a>
+              
+              
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_post">
+              <h5>
+                OUR TEAM
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post1.jpg" alt="">
+                </div>
+                <p>
+                  Shruti
+                </p>
+              </div>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post2.jpg" alt="">
+                </div>
+                <p>
+                 Ruchira 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_post">
+              <h5>
+               OUR TEAM
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post3.jpg" alt="">
+                </div>
+                <p>
+                  Helly 
+                </p>
+              </div>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post4.png" alt="">
+                </div>
+                <p>
+                  Aditi 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Aditya</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="static/js/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+    integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <!-- custom js -->
+  <script src="static/js/custom.js"></script>
+
+
+</body>
+
+</html>

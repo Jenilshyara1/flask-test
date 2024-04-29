@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Dia</title>
+
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area information_hub">
+    <!-- header section strats -->
+    <header class="header_section">
+
+
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+            <a class="navbar-brand nav-logo-text" href="index.html">
+              SugarSmart Insights
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse bg-nav-right" id="navbarSupportedContent">
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('information') }}">Information Hub</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('sugar') }}">Sugar Metrics </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('prediction') }}">Prediction</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="dropdown ml-auto dropleft">
+                <button class="btn border border-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="{{ url_for('riskfactor') }}">Risk Factor Encyclopedia</a>
+                  <a class="dropdown-item" href="{{ url_for('sugarlink') }}">Sugar Link</a>
+                  <a class="dropdown-item" href="{{ url_for('reference') }}"> Reference</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- end header section -->
+  </div>
+
+
+
+
+  <!-- hero section -->
+  <section class="riskfactor_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="riskfactor-hero-area">
+            <div class="hero-center-text-box">
+              <h1>Rethink Your Drink</h1>
+              <div class="hero-bottom-box">
+                For a Healthy Lifestyle
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end  hero section -->
+
+  <section class="beverage_img_show_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="beverage_heading_text">
+            <p> Bevrages</p>
+            <div class="beverage_second_heading">Approximate Sugar Content in Various Beverages</div>
+          </div>
+          <div class="beverage_main_boxes_area">
+            <div class="beverage_fruit_box beverage_commonBox">
+              <div class="beverage-common_img-box">
+
+                <img src="static/images/juice.jpg" alt="juice">
+              </div>
+              <a href="{{ url_for('juice') }}">
+                <div class="beverage_common_text">
+                  Fruit Juice
+                </div>
+              </a>
+
+            </div>
+            <div class="beverage_all_box beverage_commonBox">
+              <div class="beverage-common_img-box">
+                <img src="static/images/beverage2.png" alt="juice">
+              </div>
+              <a href="{{ url_for('beverages') }}">
+                <div class="beverage_common_text">
+                  Bevarages
+                </div>
+              </a>
+            </div>
+            <div class="beverage_drink_box beverage_commonBox">
+              <div class="beverage-common_img-box">
+                <img src="static/images/tea.png" alt="juice">
+              </div>
+              <a href="{{ url_for('drink') }}">
+                <div class="beverage_common_text">
+                  Regular&nbsp;Drink
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--start Faq common understandig-->
+  <section class="faq_beverages_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="faq_beverages_title">
+            <h2>Common Understandig</h2>
+            <h3>Rethink Your Drink: Understanding the Impact of Sugary Beverages</h3>
+            <p>Welcome to "Rethink Your Drink," where we delve into the significant implications of consuming sugary beverages and the importance of making informed choices for your health.
+
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="faq_beverages_content">
+            <h3 class="faq_beverages_common_title">Understanding Type 2 Diabetes and Sugar Consumption.</h3>
+            <p class="faq_beverages_common_desc">Type 2 diabetes is a metabolic disorder characterized by inadequate insulin production or the body's
+              inability to effectively use insulin. Insulin is a hormone vital for regulating blood sugar levels. A diet
+              high in sugar, particularly from sugary beverages, is strongly correlated with obesity and an increased
+              risk of developing type 2 diabetes. Research, including meta-analyses conducted by the Scientific Advisory
+              Committee on Nutrition (SACN), underscores the direct link between sugar-sweetened beverages and the
+              incidence of type 2 diabetes.</p>
+            <h3 class="faq_beverages_common_title">Why Should You Be Concerned About Sugary Drinks?   </h3>
+            <p class="faq_beverages_common_desc">
+              The consumption of sugary drinks can lead to a myriad of health issues, including weight gain, obesity, type 2 diabetes, heart disease, dental cavities, and gout. Dietary guidelines recommend limiting added sugar intake to less than 10% of total daily calories. Simply reducing the consumption of two regular sodas a day can substantially decrease calorie intake, contributing to better overall health.
+
+            </p>
+            <h3 class="faq_beverages_common_title">Approximate Sugar Content in Various Beverages
+            </h3>
+            <p class="faq_beverages_common_desc">
+              To illustrate the prevalence of hidden sugars, we provide approximate sugar content values for a variety of beverages and foods commonly consumed. From fruit-flavored drinks to baked goods and condiments, sugars can lurk in unexpected places, contributing to excessive sugar intake and its associated health risks.
+
+            </p>
+            <h3 class="faq_beverages_common_title">Enhanced Technique: UV Spectroscopy for Sugar Content Analysis
+            </h3>
+            <p class="faq_beverages_common_desc">
+              We've implemented UV Spectroscopy as our primary analytical technique for precisely measuring and quantifying sugar content in beverages. UV Spectroscopy offers several advantages, including faster analysis times, heightened sensitivity, and cost-effectiveness. This upgrade ensures that we deliver accurate and efficient assessments of sugar content, empowering you to make more informed decisions about your beverage choices.
+              
+            </p>
+            <p>Explore our website to delve deeper into the impact of sugary beverages on your health and discover valuable tips for making healthier beverage choices. Together, let's rethink our drinks for a healthier future.</p>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--end Faq common understandig-->
+
+
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="info_bottom layout_padding2">
+        <div class="row info_main_row">
+          <div class="col-md-6 col-lg-3">
+            <h5>
+              Address
+            </h5>
+            <div class="info_contact">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Location
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 9313784548
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope"></i>
+                <span>
+                  adity@gmail.com
+                </span>
+              </a>
+            </div>
+            <div class="social_box">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_links">
+              <h5>
+                Useful link
+              </h5>
+              <div class="info_links_menu">
+                <a class="active" href="index.html">
+                  Home
+                </a>
+                <a href="information.html">
+                  Information Hub
+                </a>
+                <a href="sugarmetrics.html">
+                  Sugar Metrics
+                </a>
+                <a href="prediction.html">
+                  Prediction
+                </a>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_post">
+              <h5>
+                OUR TEAM
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post1.jpg" alt="">
+                </div>
+                <p>
+                  Shruti
+                </p>
+              </div>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post2.jpg" alt="">
+                </div>
+                <p>
+                Ruchira
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_post">
+              <h5>
+               OUR TEAM
+              </h5>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post3.jpg" alt="">
+                </div>
+                <p>
+                Helly
+                </p>
+              </div>
+              <div class="post_box">
+                <div class="img-box">
+                  <img src="static/images/post4.png" alt="">
+                </div>
+                <p>
+                  Aditi
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Aditya</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="static/js/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+    integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <!-- custom js -->
+  <script src="static/js/custom.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Dia</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+    integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div class="hero_area information_hub">
+        <!-- header section strats -->
+        <header class="header_section">
+
+
+            <div class="header_bottom">
+              <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container">
+                  <a class="navbar-brand nav-logo-text" href="index.html">
+                    SugarSmart Insights
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class=""> </span>
+                  </button>
+      
+                  <div class="collapse navbar-collapse bg-nav-right" id="navbarSupportedContent">
+                    <div class="d-flex flex-column flex-lg-row align-items-center">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="{{ url_for('index') }}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ url_for('information') }}">Information Hub</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ url_for('sugar') }}">Sugar Metrics </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="{{ url_for('prediction') }}">Prediction</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="dropdown ml-auto dropleft">
+                      <button class="btn border border-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{{ url_for('riskfactor') }}">Risk Factor Encyclopedia</a>
+                        <a class="dropdown-item" href="{{ url_for('sugarlink') }}">Sugar Link</a>
+                        <a class="dropdown-item" href="{{ url_for('reference') }}"> Reference</a>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </header>
+        <!-- end header section -->
+        <!-- slider section -->
+    </div>
+
+
+    <section class="sugarlink_main_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-12">
+                    <div class="sugarlink_content_wrap">
+                        <div class="">
+                            <h3 class="text-center">Sugar Link </h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="lead">
+                                There has been a growing trend of sugar-sweetened beverages that entertain our taste
+                                buds while leaving our health much less thrilled.
+                            </p>
+                            <p class="lead">
+                                Let us explore the potential association between the consumption of those beverages and
+                                fluctuations in blood glucose levels, a crucial aspect of metabolic health.
+                            </p>
+                            <p class="lead">
+                                Blood glucose level is a key indicator of diabetes.
+                            </p>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Blood sugar before meal (mg/dL)</th>
+                                        <th>Blood sugar after meal (mg/dL)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Diabetes</td>
+                                        <td>>= 126</td>
+                                        <td>>= 200</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Prediabetes</td>
+                                        <td>110 to 125</td>
+                                        <td>140 to 199</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Normal</td>
+                                        <td>&lt;110</td>
+                                        <td>&lt;140</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p class="lead">
+                                Increase in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10384374/" class="text_decora_link" target="_blank"> sugar intake</a> can increase the risk of diabetes by leading to obesity and
+                                other health conditions.
+                            </p>
+                            <p class="lead">
+                               <a href="https://docs.google.com/document/d/1RcMadIoCwwRhdeX-n0qqb7VJU8MIcBlaUXZFswtOEUY/edit" class="text_decora_link" target="_blank"> Our study</a> aims to answer simple questions: Does drinking certain beverages have an
+                                effect on blood sugar levels? Is there a higher impact of these beverages over other
+                                factors such as neck circumference and waist circumference on blood sugar levels?
+                            </p>
+                            <p class="lead">
+                                The beverages considered include:
+                            </p>
+                            <div class="row mb-3">
+                                <div class="col-12 col-md-6">
+                                    <div class="sugarlink_imges_common">
+                                        <img src="static/images/fruit2 (1).png" alt="">
+                                        <p> Fruit juices</p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="sugarlink_imges_common">
+                                        <img src="static/images/drink3.png" alt="">
+                                        <p> Aerated drinks and energy drinks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dataset_method_content_wrap">
+                                <h3 class="common_heading_sugarlink">About the Dataset and Method:</h3>
+                                <p class="mb-1">The dataset utilized in this analysis comprises the population from Ahmedabad
+                                    University, spanning characteristics such as gender, waist circumference, neck
+                                    circumference and beverage consumed. By employing advanced statistical methods, we
+                                    aim to discern patterns and trends within the data to highlight the possible
+                                    relationship between consumption of some beverages and blood glucose levels.<span
+                                        id="dots4"></span></p>
+                                <div id="more4">
+                                    <p>There were two methods employed to try to find the correlation between these
+                                        variables.
+                                    </p>
+                                    <ul class="ml-4">
+                                        <li class="lead">First we used ANOVA (for a single factor) to test the hypothesis that
+                                            consumption of beverages has a visible impact on blood sugar. Analysis of
+                                            Variance is used to determine if there is a statistically significant
+                                            difference between the means of two or more groups of values.</li>
+                                        <li class="lead">Second, we used the Pearson correlation to find correlation values between
+                                            glucose levels, waist circumference, neck circumference and consumption of
+                                            beverages. The Pearson correlation coefficient is a descriptive statistic,
+                                            meaning that it summarizes the characteristics of a dataset. Specifically,
+                                            it describes the strength and direction of the linear relationship between
+                                            two quantitative variables.</li>
+
+                                    </ul>
+                                </div>
+                                <button onclick="readMoreFunction('4')" id="myBtn4">Read more</button>
+                            </div>
+                            <div class="key_findings_content_wrap mt-1">
+                                <h3 class="common_heading_sugarlink">Key Findings:</h3>
+                                <div class="key_findings_img_wrap">
+                                    <img src="static/images/chart.jpeg" alt="">
+                                </div>
+                                <p><span class="child_heading_keyfind">Result of ANOVA:</span>&nbsp; No observable variation was found in the mean
+                                    blood glucose levels of people who consumed sugar sweetened beverages like fruit
+                                    juices and energy drinks and people who did not consume it.</p>
+                                <p><span class="child_heading_keyfind">Result of Correlational Analysis:</span>&nbsp; It shows that apart from the
+                                    negative correlation between glucose and sugar consumption, rest of the variables
+                                    are positively related. The highest correlation out of all the variables is found
+                                    between waist circumference and glucose levels. But we cannot make concrete
+                                    conclusions based on these results because the correlational values are not
+                                    significantly huge to draw conclusions from.
+                                </p>
+                                <p>Although the statistical analysis was not able to point out anything, many<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4420570/" class="text_decora_link" target="_blank"> research
+                                    studies</a> have implied that consumption of sweetened beverages increases the sugar
+                                    levels and can indirectly be one of the reasons leading to diabetes or exacerbate
+                                    it.</p>
+                            </div>
+                            <div class="limitation_study_content_wrap mt-4">
+                                <h3 class="common_heading_sugarlink">Limitations of the Study:</h3>
+                                <p>It is essential to note that the blood glucose levels recorded in the health fair dataset are random blood glucose levels, with fasting (before meal) or postprandial (after meal) glucose levels left unspecified. Because of that, the results of the associations between beverage consumption and blood glucose levels and conclusions that we are trying to draw based on this dataset might not be fully accurate. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- info section -->
+    <section class="info_section ">
+        <div class="container">
+
+
+            <div class="info_bottom layout_padding2">
+                <div class="row info_main_row">
+                    <div class="col-md-6 col-lg-3">
+                        <h5>
+                            Address
+                        </h5>
+                        <div class="info_contact">
+                            <a href="">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    Location
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    Call +91 9313784548
+                                </span>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-envelope"></i>
+                                <span>
+                                    adity@gmail.com
+                                </span>
+                            </a>
+                        </div>
+                        <div class="social_box">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info_links">
+                            <h5>
+                                Useful link
+                            </h5>
+                            <div class="info_links_menu">
+                                <a class="active" href="index.html">
+                                    Home
+                                </a>
+                                <a href="information.html">
+                                    Information Hub
+                                </a>
+                                <a href="sugarmetrics.html">
+                                    Sugar Metrics
+                                </a>
+                                <a href="prediction.html">
+                                    Prediction
+                                </a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info_post">
+                            <h5>
+                                LATEST POSTS
+                            </h5>
+                            <div class="post_box">
+                                <div class="img-box">
+                                    <img src="static/images/post1.jpg" alt="">
+                                </div>
+                                <p>
+                                    Normal
+                                    distribution
+                                </p>
+                            </div>
+                            <div class="post_box">
+                                <div class="img-box">
+                                    <img src="static/images/post2.jpg" alt="">
+                                </div>
+                                <p>
+                                    Normal
+                                    distribution
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="info_post">
+                            <h5>
+                                News
+                            </h5>
+                            <div class="post_box">
+                                <div class="img-box">
+                                    <img src="static/images/post3.jpg" alt="">
+                                </div>
+                                <p>
+                                    Normal
+                                    distribution
+                                </p>
+                            </div>
+                            <div class="post_box">
+                                <div class="img-box">
+                                    <img src="static/images/post4.png" alt="">
+                                </div>
+                                <p>
+                                    Normal
+                                    distribution
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end info_section -->
+
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="https://html.design/">Aditya</a>
+            </p>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="static/js/jquery-3.4.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="static/js/bootstrap.js"></script>
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"
+    integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+  <!-- owl slider -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- datepicker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <!-- custom js -->
+  <script src="static/js/custom.js"></script>
+
+</body>
+
+</html>
